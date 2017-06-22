@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="ModbusExaminer.Pages.Writes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" Width="420.955">
+    <Grid Style="{StaticResource ContentRoot}">
+        <Label x:Name="label" Content="IP" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="IPAddress" HorizontalAlignment="Left" Height="23" Margin="31,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" RenderTransformOrigin="-0.063,0.626" TextChanged="textBox_TextChanged"/>
+        <Label x:Name="label_Copy" Content="Port" HorizontalAlignment="Left" Margin="166,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Port"  PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="199,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+        <Label x:Name="label_Copy1" Content="Port" HorizontalAlignment="Left" Margin="166,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Address" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RegisterAddress" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="93,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" TextChanged="RegisterAddress_TextChanged"/>
+        <Label x:Name="label_Copy3" Content="ID" HorizontalAlignment="Left" Margin="283,13,0,0" VerticalAlignment="Top" Width="18"/>
+        <TextBox x:Name="SlaveID" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="306,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+        <Label x:Name="label_Copy4" Content="New Value" HorizontalAlignment="Left" Margin="239,64,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NewValue" HorizontalAlignment="Left" Height="23" Margin="306,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55"/>
+        <Button x:Name="button" Content="Write" HorizontalAlignment="Left" Margin="166,162,0,0" VerticalAlignment="Top" Width="75" Click="button_ClickAsync"/>
+        <ComboBox x:Name="devicetypeCmbox" HorizontalAlignment="Left" SelectedIndex="0" Margin="201,115,0,0" VerticalAlignment="Top" Width="160">
+            <ComboBoxItem Content="Holding Registers" HorizontalAlignment="Left" Width="160"/>
+            <ComboBoxItem Content="Output Coils" HorizontalAlignment="Left" Width="160"/>
+        </ComboBox>
+        <Label Name="WriteResultLabel" HorizontalAlignment="Left" Margin="10,209,0,0" VerticalAlignment="Top" Width="360" Height="37">
+            <Label.Content>
+                <AccessText TextWrapping="Wrap"/>
+            </Label.Content>
+        </Label>
+        <CheckBox x:Name ="oneBasedCheckBox" Content="One Based Addresses" HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="144" Checked="CheckBox_Checked" Click="onebased_click" />
+    </Grid>
+</UserControl>

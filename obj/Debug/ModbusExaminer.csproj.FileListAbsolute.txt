@@ -1,0 +1,69 @@
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\bin\Debug\ModbusExaminer.exe
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\bin\Debug\ModbusExaminer.pdb
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\bin\Debug\FirstFloor.ModernUI.dll
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\bin\Debug\FirstFloor.ModernUI.xml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\MainWindow.baml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\About.baml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\Appearance.baml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\SettingsPage.baml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\App.baml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\MainWindow.g.cs
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\About.g.cs
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\Appearance.g.cs
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\SettingsPage.g.cs
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\App.g.cs
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\ModbusExaminer_MarkupCompile.cache
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\ModbusExaminer.g.resources
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\ModbusExaminer.exe
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\ModbusExaminer.pdb
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Connection.baml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Connection.g.cs
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Logs.baml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Writes.baml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Logs.g.cs
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Writes.g.cs
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Subscriptions.baml
+c:\users\mina\documents\visual studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Subscriptions.g.cs
+C:\Users\Mina\Documents\Visual Studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Windows\ResultsWindow.baml
+C:\Users\Mina\Documents\Visual Studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Windows\ResultsWindow.g.cs
+C:\Users\Mina\Documents\Visual Studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Read.baml
+C:\Users\Mina\Documents\Visual Studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Read.g.cs
+C:\Users\Mina\Documents\Visual Studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\ReadList.baml
+C:\Users\Mina\Documents\Visual Studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\ReadList.g.cs
+C:\Users\Mina\Documents\Visual Studio 2015\Projects\ModbusExaminer\ModbusExaminer\obj\Debug\ModbusExaminer.csprojResolveAssemblyReference.cache
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\bin\Debug\ModbusExaminer.exe
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\bin\Debug\ModbusExaminer.pdb
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\bin\Debug\FirstFloor.ModernUI.dll
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\bin\Debug\FirstFloor.ModernUI.xml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\MainWindow.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Connection.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Logs.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Read.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\About.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\Appearance.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\SettingsPage.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Subscriptions.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Writes.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Windows\ResultsWindow.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\App.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\MainWindow.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Connection.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Logs.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Read.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\About.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\Appearance.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\SettingsPage.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Subscriptions.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Writes.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Windows\ResultsWindow.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\App.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\ModbusExaminer_MarkupCompile.cache
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\ModbusExaminer.g.resources
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\ModbusExaminer.exe
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\ModbusExaminer.pdb
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\bin\Debug\NModbus4.dll
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\bin\Debug\NModbus4.xml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\Configuration.baml
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Debug\Pages\Settings\Configuration.g.cs
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\bin\Debug\Newtonsoft.Json.dll
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\bin\Debug\Newtonsoft.Json.xml

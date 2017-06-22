@@ -1,0 +1,118 @@
+﻿<UserControl x:Class="ModbusExaminer.Pages.Read"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" Width="613.604" Height="564.31">
+    <UserControl.Resources>
+        <Style x:Key="RoundButtonTemplate" TargetType="Button">
+            <Setter Property="Background" Value="Red"/>
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="15" Background="{TemplateBinding Background}"
+                                BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#FF331818"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="#FF8F0606"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="ViewButtonTemplate" TargetType="Button">
+            <Setter Property="Background" Value="Green"/>
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                >
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background"  Value="#FF819981" />
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Background" Value="DarkGreen"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </UserControl.Resources>
+    <Grid Style="{StaticResource ContentRoot}" Margin="16,28,9.6,16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="104*"/>
+            <ColumnDefinition Width="269*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="IP" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="IP" HorizontalAlignment="Left" Text="{Binding Path=DataContext.IPAddress}" Height="23" Margin="31,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" RenderTransformOrigin="-0.063,0.626" TextChanged="textBox_TextChanged"/>
+        <Label x:Name="label_Copy1" Content="Port" HorizontalAlignment="Left" Margin="49.6,10,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="port"  PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Text="{Binding Path=DataContext.Port}" Height="23" Margin="83.6,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" RenderTransformOrigin="1.179,0.429" Grid.Column="1"/>
+        <Label x:Name="label_Copy2" Content="Start Address" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="start_address" PreviewTextInput="RegisterNumberValidationTextBox" HorizontalAlignment="Left" Text="{Binding Path=DataContext.Register}" Height="23" Margin="93,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="61" TextChanged="start_address_TextChanged"/>
+        <Label x:Name="label_Copy3" Content="ID" HorizontalAlignment="Left" Margin="223,15,0,0" VerticalAlignment="Top" Width="18" Grid.Column="1"/>
+        <TextBox x:Name="slave_id" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Text="{Binding Path=DataContext.DeviceId}" Height="23" Margin="246,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="55" Grid.Column="1"/>
+        <Label x:Name="label_Copy4" Content="Count&#xD;&#xA;" HorizontalAlignment="Left" Margin="49.6,64,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="count_reg" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Text="{Binding Path=DataContext.Count}" Height="23" Margin="98.6,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="40" Grid.Column="1" TextChanged="end_address_TextChanged"/>
+        <Button x:Name="readbutton" Content="Add" HorizontalAlignment="Left" Margin="50,120,0,0" VerticalAlignment="Top" Width="89" Click="button_Click" Grid.Column="1"/>
+        <DataGrid x:Name="ConnectionsGrid" SelectionMode="Single" GridLinesVisibility="Horizontal" SelectionUnit="FullRow" HorizontalAlignment="Stretch" Margin="9,164,37,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="289" ItemsSource="{Binding ConnectionInfo}" AutoGenerateColumns="False"  IsReadOnly="True" MouseDoubleClick="ConnectionGrid_Click" SelectionChanged="ConnectionsGrid_SelectionChanged" CanUserResizeRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Address" Binding="{Binding AddressPort}" MinWidth="50" CanUserResize="False" />
+                <DataGridTextColumn Header="Slave ID" Binding="{Binding Id}" MinWidth="50" CanUserResize="False"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status, UpdateSourceTrigger=PropertyChanged}" MinWidth="50" CanUserResize="False" />
+                <DataGridTemplateColumn CanUserResize="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="View_Click" 
+                                    Width="80"
+                                    Height="20" 
+                                    Grid.Row="0"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Center"
+                                    Style="{StaticResource ViewButtonTemplate}">View Data</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn CanUserResize="False">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Style="{StaticResource RoundButtonTemplate}"   Width="100"
+                                    Height="20" 
+                                    Grid.Row="0"
+                                    Margin="0,0,0,0"
+                                    HorizontalAlignment="Center"
+                                    BorderBrush="#FFF" Click="Remove_Click">Remove</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="label_Copy5" Content="Type&#xA;" HorizontalAlignment="Left" Margin="219,64,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <ComboBox x:Name="devicetypeCmbox" Grid.Column="1" HorizontalAlignment="Left" SelectedIndex="0" Margin="249,64,0,0" VerticalAlignment="Top" Width="160" SelectionChanged="comboBox_SelectionChanged">
+            <ComboBoxItem Content="Holding Registers" HorizontalAlignment="Left" Width="160"/>
+            <ComboBoxItem Content="Input Registers" HorizontalAlignment="Left" Width="160"/>
+            <ComboBoxItem Content="Input Coils" HorizontalAlignment="Left" Width="160"/>
+            <ComboBoxItem Content="Output Coils" HorizontalAlignment="Left" Width="160"/>
+        </ComboBox>
+        <Button Name="LoadBtn" Content="Load Configuration" HorizontalAlignment="Left" Margin="31,472,0,0" VerticalAlignment="Top" Width="147" Grid.ColumnSpan="2" Click="LoadBtn_Click"/>
+        <Button x:Name="SaveBtn" Content="Save Configuration" HorizontalAlignment="Left" Margin="181,472,0,0" VerticalAlignment="Top" Width="147"  Grid.Column="1" Click="SaveBtn_Click"/>
+        <CheckBox Name ="oneBasedCheckBox" Content="One Based Addresses" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="154" Checked="CheckBox_Checked" Click="onebased_click" />
+    </Grid>
+</UserControl>

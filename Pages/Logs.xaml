@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="ModbusExaminer.Pages.Logs"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" Width="518.037" Height="631.565">
+    <Grid Style="{StaticResource ContentRoot}" Margin="10,10,16.4,16.2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="160*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox Name="logsListBox" HorizontalAlignment="Left" Height="486" Margin="10,10,0,0" 
+                 VerticalAlignment="Top" Width="446" BorderBrush="#FF081028"
+                  ScrollViewer.VerticalScrollBarVisibility="Visible"
+                  ScrollViewer.HorizontalScrollBarVisibility="Visible" Grid.ColumnSpan="2"/>
+        <!--  <Label x:Name="label" Content="Application logs" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top" Height="22" Width="119" FontSize="15" FontWeight="Bold"/>-->
+    </Grid>
+</UserControl>

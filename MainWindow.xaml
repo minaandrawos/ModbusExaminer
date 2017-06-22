@@ -1,0 +1,27 @@
+﻿<mui:ModernWindow x:Class="ModbusExaminer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="Modbus Examiner" IsTitleVisible="True"
+        ContentSource="/Pages/Read.xaml" ResizeMode="CanMinimize">
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="Read" Source="/Pages/Read.xaml" />
+                <mui:Link DisplayName="Writes" Source="/Pages/Writes.xaml" />
+                <mui:Link DisplayName="Logs" Source="/Pages/Logs.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="settings" GroupKey="settings">
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="software" Source="/Pages/SettingsPage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+    
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="settings" Source="/Pages/SettingsPage.xaml" />
+        <mui:Link DisplayName="more?" Source="http://www.minaandrawos.com" />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>
