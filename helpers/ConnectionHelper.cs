@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ModbusExaminer.helpers
@@ -16,6 +17,9 @@ namespace ModbusExaminer.helpers
     {
         [JsonIgnore]
         public ModbusIpMaster modbusMaster;
+        
+        private CancellationTokenSource cSource = new CancellationTokenSource();
+      
         private TcpClient tcpClient;
 
         public string FullAddress { get; set; }
@@ -90,7 +94,8 @@ namespace ModbusExaminer.helpers
         }
 
         public void Close()
-        {           
+        {
+            cSource.Cancel();
             tcpClient?.Close();
             modbusMaster?.Dispose();
         }
@@ -115,9 +120,9 @@ namespace ModbusExaminer.helpers
         {
             Task.Run(async () =>
             {
-                while (true)
+                while (!cSource.Token.IsCancellationRequested)
                 {
-                    await Task.Delay(i).ConfigureAwait(false);
+                    await Task.Delay(i, cSource.Token).ConfigureAwait(false);
                     if (tcpClient == null || !tcpClient.Connected)
                     {
                         logger.AddLogLine($"Connection to address {IPAddress}:{Port} seems to have failed, retrying to connect...");

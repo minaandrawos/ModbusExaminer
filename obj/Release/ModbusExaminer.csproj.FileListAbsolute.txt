@@ -34,3 +34,4 @@ C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Release\ModbusExami
 C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Release\ModbusExaminer.g.resources
 C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Release\ModbusExaminer.exe
 C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Release\ModbusExaminer.pdb
+C:\Programming_Projects\C#\ModbusExaminer\ModbusExaminer\obj\Release\ModbusExaminer.csprojResolveAssemblyReference.cache
